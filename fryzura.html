@@ -1,23 +1,30 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang='pl'>
 <head>
     <meta charset="UTF-8">
     <title>Usługi fryzjerskie</title>
     <link rel="stylesheet" href="styl2.css">
 </head>
 <body>
-    <div class="left">
-        <div>
+        <div id="l1" class="left">
             <a href="index.html"><h2>Salon fryzjerski</h2></a>
-            <img src="obraz2.jpg" alt="czesanie">
+            <img src="obraz2.jpg" alt="czesanie" style="width: 600px;">
         </div>
-        <div></div>
-    </div>
-    <div class="right">
-        <div>
+        <div id="l2" class="left">
+            <h3>Dziś promocja na strzyżenie włosów</h3>
+            <form>
+            <input type="radio" value="25" class="in" name="i">Krótkie<br>
+            <input type="radio" value="30" class="in" name="i">Średnie<br>
+            <input type="radio" value="40" class="in" name="i">Półdługie<br>
+            <input type="radio" value="50" class="in" name="i">Długie<br>
+            </form>
+            <button id="b">Odkryj promocję</button>
+            <p id="wynik">Cena strzyżenia: </p>
+        </div>
+        <div class="right" id="r1">
             <h2>Menu</h2>
         </div>
-        <div>
+        <div class="right" id="r2">
             <ol>
                 <li><a href="fryzura.html" target="_blank"> Strzyżenie</a>
                     <ul>
@@ -31,8 +38,10 @@
                 <li>Koloryzacja</li>
             </ol>
         </div>
-        <div><img src="obraz1.jpg" alt="Fryzjer"></div>
-    </div>
+        <div class="right" id="r3">
+            <img src="obraz1.jpg" alt="Fryzjer" style="height: 290px;">
+        </div>
     <footer><p> Autor: Stanisław Fiedoruk </p></footer>
+    <script src="script.js"></script>
 </body>
 </html>
